@@ -4,13 +4,14 @@ public class Node_Moore {
 	
 	private String name;
 	private char exit_Node;
-	private String[] trancitions;
+	private Trancitions trancitions;
 	
 	
-	public Node_Moore(String name, char exit_Node, String[] trancitions) {
+	public Node_Moore(String name, char exit_Node, String[] trancitions_1) {
 		super();
 		this.name = name;
 		this.exit_Node = exit_Node;
+		Trancitions trancitions=new Trancitions(trancitions_1[0]);
 		this.trancitions = trancitions;
 	}
 
@@ -35,14 +36,17 @@ public class Node_Moore {
 	}
 
 
-	public String[] getTrancitions() {
+	public Trancitions getTrancitions() {
 		return trancitions;
 	}
 
 
-	public void setTrancitions(String[] trancitions) {
+	public void setTrancitions(Trancitions trancitions) {
 		this.trancitions = trancitions;
 	}
+
+
+	
 	
 	
 	
